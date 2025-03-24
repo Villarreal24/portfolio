@@ -1,35 +1,51 @@
 ---
-title: Grupo Guia - Website + sell online
-publishDate: 2020-03-02 00:00:00
+title: Grupo Guia
+publishDate: 2023-01-01 00:00:00
 img: /assets/project-1.png
-img_alt: Iridescent ripples of a bright blue and pink liquid
+img_alt: Grupo Guia Alt
 description: |
-  We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
+  We create a platform for the own company to sell apartments online!
 tags:
   - Design
-  - Dev
-  - User Testing
+  - Development
+  - Microservices
+  - Testing
 ---
 
-## Level-two heading
+## Website and Infrastructure
 
-> Tell me and I forget. Teach me and I remember. Involve me and I learn.
+> Project overview
 
-Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
+I worked on a major project with a team of 5: 3 Fullstack developers (including me), 1 designer, and 1 project manager. The project was for a real estate company and covered all aspects of their business. Users can view properties for sale or rent, including new apartment buildings in pre-sale across multiple cities, not just Guadalajara.
 
-Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel quam elementum pulvinar etiam non.
+The apartment buildings section is a key part of the project. Initially, users could only view buildings and request more information. Recently, we added a feature to reserve apartments online. Now, users can explore buildings, compare available units, and complete the entire process—including documentation, contracts, and payments—online.
 
-### Level-three heading
+### ERP System
 
-Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl pretium fusce.
+I helped implement an ERP system for the company. This platform manages all market data and connects with other platforms like Wiggot using APIs and n8n. It includes modules for calculating commissions, evaluating investment profitability, and managing products related to real estate activities.
 
-### Level-three heading
+### Technical Implementations
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+- Frontend: Used Next.js (React.js) v16+ for better performance and SEO. Implemented server-side rendering (SSR) for specific pages to improve SEO.
 
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
+- Backend: Built a custom API with Nest.js using microservices to support all company projects and websites.
 
-#### Level-four heading
+- Database: Used PostgreSQL for data storage.
 
-- We noted this
-- And also this other point
+- Frontend Modules: Developed customer-facing and admin modules to streamline online data processing.
+
+- Authentication: Implemented Single Sign-On (SSO) with Keycloak and managed user roles for permissions.
+
+- CRM Integration: Connected the website with HubSpot CRM to manage leads and customer data effectively.
+
+- Workflow Automation: Used n8n to connect APIs and services, ensuring smooth data transfer and accurate tracking.
+
+- Storage: Stored documents, contracts, and photos in Amazon S3 buckets. Used .webp format for images to optimize loading times.
+
+- Landing Pages: Created multiple landing pages in React.js for real estate developers, focusing on UX. Integrated tools like Google Analytics, Facebook Pixel, and Hotjar.
+
+- Infrastructure: Used Amazon tools like Route 53, EC2, and ECS to manage projects securely and ensure smooth operation.
+
+- API Connections: Connected to the Wiggot API via Nest.js microservices and n8n workflows for data exchange.
+
+- Performance Optimization: Used server-side rendering (SSR) in Next.js for specific requests and tools like Redux Persist with memo and callback functions to cache data.

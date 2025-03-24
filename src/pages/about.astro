@@ -26,35 +26,48 @@ import Hero from '../components/Hero.astro';
 				<h2 class="section-title">Background</h2>
 				<div class="content">
 					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum
-						id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla
-						pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
+						I am a passionate full-stack developer with over 6 years of experience creating 
+						innovative and user-friendly web and mobile solutions. I love using technology 
+						to solve problems and improve everyday experiences for people and businesses.
 					</p>
 					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
+						Throughout my career, I've worked on a variety of projects—from real estate 
+						platforms and financial management systems to mobile apps that help tourists 
+						discover new places. In each project, I focus on delivering clean, high-quality 
+						interfaces and seamless user experiences.
 					</p>
 					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet
-						eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
-						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-						pretium fusce.
+						I enjoy learning new skills and adapting to new challenges, whether working 
+						independently from home or collaborating with a team. My strong attention to 
+						detail and commitment to continuous improvement help me create software that 
+						not only works well but also makes a real difference.
+					</p>
+					<p>
+						I'm excited to bring my creativity, technical know-how, and passion for 
+						innovation to new projects and teams.
 					</p>
 				</div>
 			</section>
 			<section>
 				<h2 class="section-title">Education</h2>
 				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
+					<div class="education-content">
+						<p>Software Engienner</p>
+						<div>
+							<p>Universidad Estatal de Sonora (UES)</p>
+							<p class="year">2016 - 2020</p>
+						</div>
+					</div>
 				</div>
 			</section>
 			<section>
 				<h2 class="section-title">Skills</h2>
 				<div class="content">
-					<p>officia unde omnis</p>
+					<p>- Creative solutions</p>
+					<p>- Web developer</p>
+					<p>- Mobile developer</p>
+					<p>- Team player</p>
+					<p>- Design Knowledge</p>
 				</div>
 			</section>
 		</main>
@@ -102,6 +115,16 @@ import Hero from '../components/Hero.astro';
 	.content :global(a:hover),
 	.content :global(a:focus) {
 		text-decoration-color: currentColor;
+	}
+
+	.education-content {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.year {
+		font-size: smaller;
+		text-align: right;
 	}
 
 	@media (min-width: 50em) {
