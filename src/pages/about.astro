@@ -62,12 +62,16 @@ import Hero from '../components/Hero.astro';
 			</section>
 			<section>
 				<h2 class="section-title">Skills</h2>
-				<div class="content">
+				<div class="content skills">
 					<p>- Creative solutions</p>
 					<p>- Web developer</p>
 					<p>- Mobile developer</p>
 					<p>- Team player</p>
 					<p>- Design Knowledge</p>
+					<p>- Communications skills</p>
+					<p>- Infrastructure analysis</p>
+					<p>- Autodidact</p>
+					<p>- Accountability</p>
 				</div>
 			</section>
 		</main>
@@ -115,6 +119,30 @@ import Hero from '../components/Hero.astro';
 	.content :global(a:hover),
 	.content :global(a:focus) {
 		text-decoration-color: currentColor;
+	}
+
+	.skills {
+		display: grid;
+		gap: 1rem; /* Espacio entre los elementos */
+	}
+
+	/* 1 columna por defecto (móvil) */
+	.skills {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	/* 2 columnas en tablet (por ejemplo, pantallas de 600px en adelante) */
+	@media (min-width: 600px) {
+		.skills {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	/* 3 columnas en desktop (por ejemplo, pantallas de 1024px en adelante) */
+	@media (min-width: 1024px) {
+		.skills {
+			grid-template-columns: repeat(3, 1fr);
+		}
 	}
 
 	.education-content {
