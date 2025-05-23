@@ -1,5 +1,5 @@
 ---
-title: Pokemon API
+title: Pokemon Card Search APP
 publishDate: 2025-05-20 00:00:00
 img: /assets/pokemon-project.png
 img_alt: Pokemon Alt
@@ -14,6 +14,20 @@ tags:
 
 ## Pokemon API Search
 
-> Project overview
+> A dynamic web application built with Vue 3 (Composition API) and TypeScript.
 
-I developed a modern landing page for a client using Next.js and deployed it on Vercel. This single page application (SPA) features multiple content sections that clearly present the client's brand and offerings. We collaborated closely with the client through several meetings to gather their requirements, ideas, and expectations. The design process was carried out in Figma, ensuring a polished and user-friendly layout. Additionally, the page includes a contact form that sends visitor information directly to an email, providing an efficient way to engage with the audience. The project is optimized for speed and responsiveness, delivering a seamless user experience on any device.
+Designed to fetch and display Pokémon cards from a public Pokémon API.
+
+Search Functionality: Users can search for any Pokémon by name, retrieving and displaying its card along with key attributes (e.g., type, abilities, stats).
+
+Popular Pokémon List: Automatically fetches and showcases the top 20 most popular Pokémon upon initial load.
+
+Responsive UI: A clean, interactive card-based layout that adapts to different screen sizes.
+
+Type-Safe Development: Leverages TypeScript for robust type checking and maintainable code.
+
+API Integration: Efficiently communicates with the Pokémon API to fetch real-time data using Fetch.
+
+This project demonstrates modern frontend development practices, including reactive state management, modular component design, and asynchronous data handling—showcasing my ability to build scalable and user-friendly web applications.
+
+Technical Stack: Vite, Vue 3 (Composition API), TypeScript, RESTful API Integration, TailwindCSS.
