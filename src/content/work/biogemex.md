@@ -3,6 +3,7 @@ title: Biogemex
 publishDate: 2019-12-01 00:00:00
 img: /assets/project-biogemex.png
 img_alt: Biogemex Alt
+link: "https://www.biogemex.net"
 description: |
   I developed a landing page of a client for his own company
 tags:

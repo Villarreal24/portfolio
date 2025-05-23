@@ -3,6 +3,7 @@ title: Grupo Guia
 publishDate: 2023-01-01 00:00:00
 img: /assets/grupo-guia.png
 img_alt: Grupo Guia Alt
+link: "https://grupoguia.mx"
 description: |
   We create a platform for the own company to sell apartments online!
 tags:

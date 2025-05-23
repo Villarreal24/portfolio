@@ -3,6 +3,7 @@ title: PIQ Generación
 publishDate: 2024-08-01 00:00:00
 img: /assets/piq-generacion.png
 img_alt: PIQ Alt
+link: "https://www.piqgeneracion.com/"
 description: |
   I developed a landing page of a client for his own company
 tags:

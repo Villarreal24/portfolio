@@ -3,6 +3,7 @@ title: Pokemon Card Search APP
 publishDate: 2025-05-20 00:00:00
 img: /assets/pokemon-project.png
 img_alt: Pokemon Alt
+link: "https://pokemon-vue-sandy.vercel.app"
 description: |
   I create this page for a code challenge interview, was developed in just one day.
 tags:
