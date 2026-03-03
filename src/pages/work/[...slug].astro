@@ -7,6 +7,7 @@ import ContactCTA from '../../components/ContactCTA.astro';
 import Hero from '../../components/Hero.astro';
 import Icon from '../../components/Icon.astro';
 import Pill from '../../components/Pill.astro';
+import CallToAction from '../../components/CallToAction.astro';
 
 interface Props {
 	entry: CollectionEntry<'work'>;
@@ -45,17 +46,43 @@ const { Content } = await entry.render();
 			</header>
 			<main class="wrapper">
 				<div class="stack gap-10 content">
-					{entry.data.img &&
-						<a href={entry.data.link}>
+					{entry.data.img && (
+						entry.data.link ? (
+							<a href={entry.data.link} target="_blank" rel="noopener noreferrer" title="Click to see the project in action" class="project-img-link">
+								<img 
+									src={entry.data.img} 
+									alt={entry.data.img_alt || 'Image without description'} 
+								/>
+							</a>
+						) : (
 							<img 
 								src={entry.data.img} 
-								alt={entry.data.img_alt || 'Imagen sin descripción'} 
+								alt={entry.data.img_alt || 'Image without description'} 
 							/>
-						</a>
-					}
+						)
+					)}
 					
 					<div class="content">
 						<Content />
+					</div>
+
+					<div class="row">
+						{entry.data.repo &&
+							<div class="repo-action">
+								<CallToAction href={entry.data.repo} target="_blank" rel="noopener noreferrer">
+									<Icon icon="github-logo" size="1.2em" />
+									Repository
+								</CallToAction>
+							</div>
+						}
+						{entry.data.link && (
+							<div class="repo-action">
+								<CallToAction href={entry.data.link} target="_blank" rel="noopener noreferrer">
+									<Icon icon="github-logo" size="1.2em" />
+									View Project
+								</CallToAction>
+							</div>
+						)}
 					</div>
 				</div>
 			</main>
@@ -115,6 +142,31 @@ const { Content } = await entry.render();
 		box-shadow: var(--shadow-sm);
 		background: var(--gradient-subtle);
 		border: 1px solid var(--gray-800);
+	}
+
+	.project-img-link {
+		position: relative;
+		display: block;
+		cursor: pointer;
+	}
+
+	.row {
+		display: flex;
+		flex-direction: row;
+		gap: 1rem;
+		justify-content: center;
+		align-items: stretch;
+		margin-top: 1rem;
+		margin-bottom: 2rem;
+	}
+
+	.repo-action {
+		flex: 1;
+		display: flex;
+	}
+
+	.repo-action :global(a) {
+		width: 100%;
 	}
 
 	.content :global(blockquote) {
