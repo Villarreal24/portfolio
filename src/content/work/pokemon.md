@@ -1,5 +1,5 @@
 ---
-title: Pokemon Card Search APP
+title: Pokémon Battle Arena & Explorer
 publishDate: 2025-05-20 00:00:00
 img: /assets/pokemon-project.webp
 img_alt: Pokemon Alt
